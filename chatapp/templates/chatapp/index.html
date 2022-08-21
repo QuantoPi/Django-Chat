@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title>Chat App</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+        <link rel="icon" type="image/x-icon" href="{% static 'img/appicon.ico' %}">
+        <script src="{% static 'js/app.js' %}" defer></script>
+    </head>
+    <body>
+        <dialog id="modal">
+            <input type="text" id="name-input" placeholder="Enter a username" class="modal-form">
+            <center>
+                <button id="btn-close-modal" class="modal-btn">Send</button>
+            </center>
+        </dialog>
+        <div id="container" class="bordergradient">
+            <div class="column">
+                <div id="messages"></div>
+            </div>
+            <div class="column-type-section">
+                <center>
+                    <form id="form" class="form-css">
+                        <input type="text" name="msg"/>
+                    </form>
+                </center>
+            </div>
+        </div>
+    </body>
+</html>
